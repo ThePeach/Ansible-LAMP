@@ -1,7 +1,5 @@
-ansible-playbooks-gentoo
+Ansible Playbooks for Gentoo
 ==============
-
-Ansible playbooks for gentoo
 
 This repo contains a series of Ansible Playbooks that might be used to create virtual hosts in a LAMP or similar stack.
 

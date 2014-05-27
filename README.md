@@ -1,4 +1,4 @@
-Ansible Playbooks for a working LAMP installation
+Ansible Playbooks for a working LAMP dev box
 ==============
 
 This repo contains a series of Ansible Playbooks that might be used to create virtual hosts in a LAMP or similar stack.
@@ -9,3 +9,28 @@ The base box used would be a Gentoo box
 
 Enjoy,
 Peach.
+
+Usage
+--
+
+You have two ways to use these playbooks:
+
+- use git submodules *[deprecated but currently the only supported]*
+- use npm/composer/... you name it! // TODO
+
+First method
+--
+
+CD into your `project_dir`, and add the Ansible playbooks checking it as a submodule
+
+```
+$ cd project_dir
+```
+
+Clone this repo
+
+```
+$ git clone ThePeach/Ansible-LAMP
+$ cd Ansible-LAMP
+```
+

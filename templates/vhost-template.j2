@@ -1,0 +1,35 @@
+# {{ ansible_managed }}
+
+<VirtualHost *:80>
+	ServerName ibmrisksurvey.sandbox
+	DocumentRoot /mnt/workspace/ibmrisksurvey.com
+	DirectoryIndex index.php index.html
+
+	<Directory /mnt/workspace/ibmrisksurvey.com>
+		Options -Indexes -ExecCGI
+		AllowOverride All
+		Order allow,deny
+		Allow from All
+	</Directory>
+	<IfModule mpm_peruser_module>
+		ServerEnvironment apache
+	</IfModule>
+</VirtualHost>
+
+<VirtualHost *:443>
+	ServerName ibmrisksurvey.sandbox
+	DocumentRoot /mnt/workspace/ibmrisksurvey.com
+	DirectoryIndex index.php index.html
+
+	Include /etc/apache2/vhosts.d/default_ssl_vhost.include
+	<Directory /mnt/workspace/ibmrisksurvey.com>
+		SSLREquireSSL
+		Options -Indexes -ExecCGI
+		AllowOverride All
+		Order allow,deny
+		Allow from All
+	</Directory>
+	<IfModule mpm_peruser_module>
+		ServerEnvironment apache
+	</IfModule>
+</VirtualHost>

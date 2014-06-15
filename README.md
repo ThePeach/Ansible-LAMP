@@ -30,7 +30,7 @@ $ cd project_dir
 Clone this repo
 
 ```
-$ git clone ThePeach/Ansible-LAMP
+$ git clone https://github.com/ThePeach/Ansible-LAMP.git
 $ cd Ansible-LAMP
 ```
 
